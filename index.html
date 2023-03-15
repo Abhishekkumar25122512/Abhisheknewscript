@@ -55,10 +55,15 @@
 	        "https://www.bing.com/search?q=usa president net worth",
 	        "https://www.bing.com/search?q=indian economy",
 	        "https://www.bing.com/search?q=g20 india",]
+   function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+   }
 
 async function NewTab() {
     for (let i = 0; i < 36; i++) {
+	    await sleep(3000);
         window.open(url[i], '_blank');
+	
     }
 }
 	</script>
