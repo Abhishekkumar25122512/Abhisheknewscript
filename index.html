@@ -61,10 +61,10 @@
 
 async function NewTab() {
     for (let i = 0; i < 36; i++) {
-        await sleep(5000);
 		openedWindow = window.open(url[i], '_blank');
-		await sleep(6000);
-        closeWin();	
+		await sleep(10000);
+        	closeWin();
+	    	await sleep(1000);
     }
 }
 function closeWin() {
