@@ -269,7 +269,7 @@ window.addEventListener('load', function() {
 	}, 100);
 });
 
-document.getElementById("date").innerHTML = "Today is : " + daylist[day] + ".";
+document.getElementById("date").innerHTML = daylist[day];
 function sleep(ms) {
 	return new Promise((resolve) => setTimeout(resolve, ms));
 }

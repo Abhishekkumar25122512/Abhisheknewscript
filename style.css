@@ -1,68 +1,3 @@
-html {
-	height: 100%;
-	background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-	overflow: hidden;
-}
-
-body,
-html {
-	margin: 0;
-	padding: 0;
-}
-
-.btn {
-	background-color: #b621fe!important; 
-	border: none;
-	z-index: 1;
-	width: 130px;
-	height: 40px;
-	color: #fff;
-	border-radius: 5px;
-	padding: 10px 25px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 500;
-	background: transparent;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	position: relative;
-	display: inline-block;
-	box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-		7px 7px 20px 0px rgba(0, 0, 0, .1),
-		4px 4px 5px 0px rgba(0, 0, 0, .1);
-	outline: none;
-	margin: 20px;
-}
-
-.btn:after {
-	position: absolute;
-	content: "";
-	width: 0;
-	height: 100%;
-	top: 0;
-	right: 0;
-	z-index: -1;
-	background-color: #663dff;
-	border-radius: 5px;
-	box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-		7px 7px 20px 0px rgba(0, 0, 0, .1),
-		4px 4px 5px 0px rgba(0, 0, 0, .1);
-	transition: all 0.3s ease;
-}
-
-.btn:hover {
-	color: #fff;
-}
-
-.btn:hover:after {
-	left: 0;
-	width: 100%;
-}
-
-.btn:active {
-	top: 2px;
-}
-
-
 #stars {
 	width: 1px;
 	height: 1px;
@@ -137,13 +72,6 @@ html {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-}
-
-.warning p {
-	position: absolute;
-	bottom: 2.5%;
-	right: 2.5%;
-	color: #FFF;
 }
 
 @keyframes animStar {
