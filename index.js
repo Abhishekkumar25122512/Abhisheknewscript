@@ -257,7 +257,6 @@ const url = [
 	"https://www.bing.com/search?q=hanuman",
 	"https://www.bing.com/search?q=durga",
 ];
-var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];
 const d = new Date();
 let day = d.getDay();
 let wt = 5500;
@@ -268,8 +267,6 @@ window.addEventListener('load', function() {
 		console.log("Scrolled");
 	}, 100);
 });
-
-// document.getElementById("date").innerHTML = daylist[day];
 function sleep(ms) {
 	return new Promise((resolve) => setTimeout(resolve, ms));
 }
