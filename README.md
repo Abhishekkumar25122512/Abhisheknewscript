@@ -8,4 +8,4 @@
 <br></br>
 [chrome](https://chrome.google.com/webstore/detail/user-agent-switcher-and-m/bhchdcejhohfmigjafbampogmaanbfkg)
 
-# to collect points for searching on phone
+# to collect additional points for searching on phone while surfing from pc 
