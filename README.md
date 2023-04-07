@@ -1,6 +1,6 @@
 # bing-rewards
 
-## [visit](https://pratyay360.github.io/bing-rewards) [https://pratyay360.github.io/bing-rewards/]
+## [visit](https://pratyay360.github.io/bing-rewards) ```https://pratyay360.github.io/bing-rewards/```
 # Note Bing can block popups so please allow them after running for the first time.
 # additionally install 
 ## user agent switcher addon and set user agent to <b>edge android</b> 
