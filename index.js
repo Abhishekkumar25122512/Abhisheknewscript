@@ -259,7 +259,7 @@ const url = [
 ];
 const d = new Date();
 let day = d.getDay();
-let wt = 5000;
+let wt = 8000;
 window.addEventListener('load', function() {
 	setTimeout(function(){
 		window.scrollTo(0,0);
