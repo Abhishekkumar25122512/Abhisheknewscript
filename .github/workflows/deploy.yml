@@ -1,3 +1,11 @@
+name: Deploy Documentation
+
+on:
+  push:
+    branches:
+      - master
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
