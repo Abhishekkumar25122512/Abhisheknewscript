@@ -276,9 +276,9 @@ async function newTab() {
 	if (dayStartIndex >= url.length || dayEndIndex > url.length) {
 		alert("Invalid Range");
 	}
-
-	for (let i = dayStartIndex; i < dayEndIndex; i++) {
-		openedWindow = window.open(url[i], "_blank");
+ 	for (let i = dayStartIndex; i < dayEndIndex; i++) {
+		let x = Math.floor(Math.random() * 280);
+		openedWindow = window.open(url[x], "_blank");
 		await sleep(wt);
 		if(openedWindow){
 			openedWindow.close();
