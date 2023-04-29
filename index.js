@@ -9999,6 +9999,15 @@ mediawiki
 configurations
 poison`.split('\n');
 
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
 let wt = 5500;
 
 window.addEventListener('load', function() {
@@ -10014,6 +10023,9 @@ function sleep(ms) {
 async function newTab() {
 	let used = [];
 	// console.log("Used reset...");
+
+	shuffleArray(words);
+	// console.log('Shuffling...');
 
 	for (let i = 1; i <= 36; i++) {
 		let index = Math.floor(Math.random() * words.length);
