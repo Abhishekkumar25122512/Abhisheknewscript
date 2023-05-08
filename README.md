@@ -1,6 +1,6 @@
 # bing-rewards
 
-## [visit](https://pratyay360.github.io/bing-rewards) ```https://pratyay360.github.io/bing-rewards/```
+## [visit](https://bing-rewards.pages.dev/) ```https://bing-rewards.pages.dev/```
 
 # Note your browser can block pop ups like this 
 <img src="asset/1.png"/>
