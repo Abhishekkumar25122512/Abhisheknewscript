@@ -10008,7 +10008,7 @@ function shuffleArray(array) {
     }
 }
 
-let wt = 7500;
+let wt = 5500;
 
 window.addEventListener('load', function() {
 	setTimeout(function(){
