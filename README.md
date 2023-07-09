@@ -2,6 +2,9 @@
 
 ## [visit](https://bing-rewards.pages.dev/) ```https://bing-rewards.pages.dev/```
 
+<img src="asset/image.png"/>
+
+
 # Note your browser can block pop ups like this 
 <img src="asset/1.png"/>
 
