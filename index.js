@@ -1,8 +1,8 @@
 const words = `the
 of
-and
 to
 a
+and
 in
 for
 is
@@ -10037,7 +10037,7 @@ async function newTab() {
 		used.push(index);
 		// console.log(used);
 
-		openedWindow = window.open(`https://www.bing.com/search?q=${words[index]}%20meaning`, "_blank");
+		openedWindow = window.open(`https://www.bing.com/search?q=${words[index]}`, "_blank");
 		await sleep(wt);
 		if(openedWindow){
 			openedWindow.close();
