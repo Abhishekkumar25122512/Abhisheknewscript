@@ -1,6 +1,6 @@
-# bing-rewards
+![image](https://github.com/microsoft-farmer/bing-rewards/assets/61408566/96fe81e3-1042-4c38-9504-cd2acc0d3fa8)# bing-rewards
 
-## [visit](https://bing-rewards.pages.dev/) ```https://bing-rewards.pages.dev/```
+<a href="https://bing-rewards.pages.dev/" target="_blank"><img src="https://agrilyze.ca/wp-content/uploads/2020/05/visit-website-button.png" width="200"  target="_blank"></a> 
 
 <img src="asset/image.png"/>
 
