@@ -1,6 +1,6 @@
 # bing-rewards
 
-<a href="https://bing-rewards.pages.dev/" target="_blank"><img src="https://agrilyze.ca/wp-content/uploads/2020/05/visit-website-button.png" width="200"  target="_blank"></a> 
+<a href="https://bing-rewards.pages.dev/"><img src="https://agrilyze.ca/wp-content/uploads/2020/05/visit-website-button.png" width="200"  target="_blank"></a> 
 
 <img src="asset/image.png"/>
 
