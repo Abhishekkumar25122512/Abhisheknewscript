@@ -10000,9 +10000,9 @@ configurations
 poison`.split('\n');
 
 function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        let temp = array[i];
         array[i] = array[j];
         array[j] = temp;
     }
@@ -10021,7 +10021,7 @@ function sleep(ms) {
 	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 async function newTab() {
-	let used = [];
+	const used = [];
 	// console.log("Used reset...");
 
 	shuffleArray(words);
@@ -10030,7 +10030,7 @@ async function newTab() {
 	for (let i = 1; i <= 36; i++) {
 		let index = Math.floor(Math.random() * words.length);
 		// console.log(`${index} index created`);
-		while(used.includes(index)) {
+		while(used.has(index)) {
 			index = Math.floor(Math.random() * words.length);
 			// console.log(`Index used new index is ${index}`);
 		}
