@@ -10021,7 +10021,7 @@ function sleep(ms) {
 	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 async function newTab() {
-	const used = [];
+	const used = new Set();
 	// console.log("Used reset...");
 
 	shuffleArray(words);
@@ -10034,7 +10034,7 @@ async function newTab() {
 			index = Math.floor(Math.random() * words.length);
 			// console.log(`Index used new index is ${index}`);
 		}
-		used.push(index);
+		used.add(index);
 		// console.log(used);
 
 		openedWindow = window.open(`https://www.bing.com/search?q=${words[index]}`, "_blank");
