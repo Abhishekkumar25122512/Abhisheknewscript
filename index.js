@@ -1558,7 +1558,7 @@ const words = ["the", "of", "to", "a", "and", "in", "for", "is", "on", "that",
     "robbie", "stake", "cocktail", "outlets", "swaziland", "varieties",
     "arbor", "mediawiki", "configurations", "poison"
 ];
-const wt = 7000;
+const wt = 5000;
 
 window.addEventListener('load', function () {
     setTimeout(function () {
