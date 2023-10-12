@@ -29,8 +29,8 @@ async function newTab() {
     warn.innerHTML = "Please enter a number greater than 1";
     flag = 1;
   }
-  if (wt > 20000) {
-    warn.innerHTML = "Too Much wait time! enter something less than 20";
+  if (wt > 60000) {
+    warn.innerHTML = "Too Much wait time! enter something less than 1 min";
     flag = 1;
   }
   if (flag == 1) {
