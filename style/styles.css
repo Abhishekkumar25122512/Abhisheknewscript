@@ -9,6 +9,10 @@ html {
 	padding: 0;
 }
 
+#warn {
+	letter-spacing: 3px;
+}
+
 .btn {
 	background-color: #663dff!important; 
 	border: none;
@@ -76,7 +80,7 @@ html {
 }
 
 .inp input{
-	width: 50%;
+	width: auto;
 	height: 40px;
 	border-radius: 5px;
 	border: none;
