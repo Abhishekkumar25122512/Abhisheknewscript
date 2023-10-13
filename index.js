@@ -30,7 +30,7 @@ async function newTab() {
     flag = 1;
   }
   if (wt > 60000) {
-    warn.innerHTML = "Too Much wait time! enter something less than 1 min";
+    warn.innerHTML = "Long wait time! Enter something less than 1 min";
     flag = 1;
   }
   if (flag == 1) {
