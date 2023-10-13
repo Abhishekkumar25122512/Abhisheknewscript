@@ -9,8 +9,8 @@ html {
 	padding: 0;
 }
 
-#warn {
-	letter-spacing: 3px !important;
+p#\#warn {
+	letter-spacing: 3px;
 }
 
 .btn {
