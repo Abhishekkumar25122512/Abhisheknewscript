@@ -95,6 +95,7 @@ p#\#warn {
 		4px 4px 5px 0px rgba(241, 241, 241, 0.644);
 	outline: none;
 	margin: 20px;
+	text-align: center;
 }
 .inp p{
 	position: inherit;
