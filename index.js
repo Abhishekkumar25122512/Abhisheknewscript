@@ -49,8 +49,12 @@ async function newTab() {
           index = Math.floor(Math.random() * words.length);
         }
         used.add(index);
+        var a = i%8;
+        if(a==0){
+          a=8;
+        }
         const openedWindow = window.open(
-          `https://www.bing.com/search?q=${words[index]}+${words[index+2]}+&FORM=QSRE1`,
+          `https://www.bing.com/search?q=${words[index]}+${words[index+2]}+&FORM=QSRE${a}`,
           "_blank"
         );
         await sleep(wt);
