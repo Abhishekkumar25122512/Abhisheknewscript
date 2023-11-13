@@ -33,25 +33,16 @@
         <p id="#warn">Enter Delay in seconds (Default 4s)</p>
       </div>
       <div class="dbtn">
-      
-<button onclick="requestDesktopSite()">Request Desktop Site</button>
+      <button class="btn" >Collect</button>
     </div>
     </div>
      
 <script type="text/javascript">
   setTimeout(function(){
       window.location.href = window.location.href;
-  },30000)
+  },70000)
 </script>
 
-<script function requestDesktopSite(){
- if(document.getElementsByTagName('meta')['viewport'].content=='width= 1440px;'){
-  document.getElementsByTagName('meta')['viewport'].content='width= 400px;';
- }else{
-  document.getElementsByTagName('meta')['viewport'].content='width= 1440px;';
- }
-}
-</script>
 
     <script src="index.js"></script>
     
