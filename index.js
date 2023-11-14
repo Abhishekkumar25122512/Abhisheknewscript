@@ -23,17 +23,17 @@ async function newTab() {
   // console.log(wt) // Parse the user's input as a number
   if (isNaN(wt)) {
     warn.innerHTML = "Please enter a number";
-    flag = 1;
+    flag = 10000;
   }
-  if (wt < 1000) {
+  if (wt < 1000000) {
     warn.innerHTML = "Please enter a number greater than 1";
     flag = 1;
   }
-  if (wt > 60000) {
+  if (wt > 6000000) {
     warn.innerHTML = "Long wait time! Enter something less than 1 min";
     flag = 1;
   }
-  if (flag == 1) {
+  if (flag == 100000) {
     return;
   } else {
     let words = [];
