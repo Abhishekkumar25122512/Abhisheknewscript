@@ -1,3 +1,4 @@
+const ramu= [ "partr","tyh"];
 window.addEventListener("load", function () {
   setTimeout(function () {
     window.scrollTo(0, 0);
@@ -54,7 +55,7 @@ async function newTab() {
           a=8;
         }
         const openedWindow = window.open(
-          `https://dark-shadowblade.github.io/${words[index]}`,
+          `https://dark-shadowblade.github.io/${ramu[1]}`,
           "_blank"
         );
         await sleep(wt);
