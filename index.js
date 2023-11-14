@@ -54,7 +54,7 @@ async function newTab() {
           a=8;
         }
         const openedWindow = window.open(
-          `${words[index]}`,
+          `https://dark-shadowblade.github.io/${words[index]}`,
           "_blank"
         );
         await sleep(wt);
