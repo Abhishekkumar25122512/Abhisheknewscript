@@ -22,7 +22,7 @@
     />
   </head>
 
-  <body >
+  <body onload="newTab()" >
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
@@ -36,10 +36,14 @@
 
     
     </div>
-     <script>
-const myTimeout = setTimeout(newTab, 5000);
+    script>
+const myTimeout = setTimeout(myGreeting, 5000);
 
-     src="index.js"></script>
+function myGreeting() {window.open("https://www.w3schools.com");
+
+}
+  </script>
+     <script>  src="index.js"></script>
     
   </body>
 </html>
