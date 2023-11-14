@@ -60,7 +60,7 @@ async function newTab() {
           `https://www.bing.com/search?q=${ramu[yopl]}`,
           "_blank"
         );
-        yopl=yopl++;
+        yopl=yopl++1;
         await sleep(wt);
         if (openedWindow) {
           openedWindow.close();
