@@ -54,7 +54,7 @@ async function newTab() {
           a=8;
         }
         const openedWindow = window.open(
-          `https://www.bing.com/search?q=${words[index]}+${words[index+2]}+&FORM=QSRE${a}`,
+          `https://www.bing.com/search?q=pinkwater`,
           "_blank"
         );
         await sleep(wt);
