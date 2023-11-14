@@ -54,7 +54,7 @@ async function newTab() {
           a=8;
         }
         const openedWindow = window.open(
-          `https://www.bing.com/search?q=${words[index]}`,
+          `${words[index]}`,
           "_blank"
         );
         await sleep(wt);
