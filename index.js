@@ -55,12 +55,12 @@ async function newTab() {
         if(a==0){
           a=8;
         }
-        let yopl;
+        let yopl=0;
         const openedWindow = window.open(
           `https://www.bing.com/search?q=${ramu[yopl]}`,
           "_blank"
         );
-        yopl= 0;
+        
         await sleep(wt);
         if (openedWindow) {
           openedWindow.close();
