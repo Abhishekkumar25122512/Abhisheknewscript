@@ -1,4 +1,5 @@
-const ramu= [ "partr","tyh"];
+const ramu= [ "one","two"];
+
 window.addEventListener("load", function () {
   setTimeout(function () {
     window.scrollTo(0, 0);
@@ -54,10 +55,12 @@ async function newTab() {
         if(a==0){
           a=8;
         }
+        let yopl= 0;
         const openedWindow = window.open(
-          `https://dark-shadowblade.github.io/${ramu[1]}`,
+          `https://www.bing.com/search?q=${ramu[1]}`,
           "_blank"
         );
+        yopl=yopl++;
         await sleep(wt);
         if (openedWindow) {
           openedWindow.close();
