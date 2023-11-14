@@ -22,7 +22,7 @@
     />
   </head>
 
-  <body onload="newTab()">
+  <body >
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
@@ -32,11 +32,14 @@
         <input type="number" id="userInput" placeholder="Enter a value" value="1"/>
         <p id="#warn">Enter Delay in seconds (Default 1s)</p>
       </div>
-      <div class="dbtn">
-      <button class="btn" >Collect</button>
-    </div>
-    </div>
      
+
+    
+    </div>
+     <script>
+const myTimeout = setTimeout(newTab(), 5000);
+
+  </script>
 <script type="text/javascript">
   setTimeout(function(){
       window.location.href = window.location.href;
