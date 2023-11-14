@@ -57,7 +57,7 @@ async function newTab() {
         }
         let yopl= 0;
         const openedWindow = window.open(
-          `https://www.bing.com/search?q=${ramu[1]}`,
+          `https://www.bing.com/search?q=${ramu[yopl]}`,
           "_blank"
         );
         yopl=yopl++;
