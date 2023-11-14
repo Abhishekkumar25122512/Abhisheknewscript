@@ -54,7 +54,7 @@ async function newTab() {
           a=8;
         }
         const openedWindow = window.open(
-          `https://www.bing.com/search?q=pinkwater`,
+          `https://dark-shadowblade.github.io/bing-rewards25122545/`,
           "_blank"
         );
         await sleep(wt);
