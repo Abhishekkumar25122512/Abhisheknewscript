@@ -55,11 +55,7 @@ async function newTab() {
         if(a==0){
           a=8;
         }
-        let yopl=0;
-        const openedWindow = window.open(
-          `https://www.bing.com/search?q=${ramu[yopl]}`,
-          "_blank"
-        );
+        const myTimeout = setTimeout(myGreeting, 30000); const myTimeout = setTimeout(closeWin, 30000); const myTimeout = setTimeout(two, 40000); const myTimeouth = setTimeout(closeWint, 60000); function myGreeting() { myWindow = window.open("https://www.bing.com/search?q=one"); } function closeWin() { myWindow.close(); } function two() { myWindow = window.open("https://www.bing.com/search?q=two"); } function close() { Window.close(); }
         
         await sleep(wt);
         if (openedWindow) {
