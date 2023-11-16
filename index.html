@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Open and Refresh</title>
+</head>
+<body>
+
+<script>
+  // Counter to keep track of refreshes
+  var refreshCount = 0;
+
+  // Function to open a link and refresh the page
+  function openLinkAndRefresh() {
+    // Open a link
+    window.open(
+    "https://abhishekkumar25122512.github.io/bing-rewards25122005abhi/"
+    
+    );
+    
+    // Increment the refresh count
+    refreshCount++;
+
+    // Refresh the page 10 times every 5 seconds
+    if (refreshCount < 32) {
+      setTimeout(function() {
+        location.reload();
+      }, 1200);
+    }
+  }
+
+  // Call the function on page load
+  window.onload = openLinkAndRefresh;
+</script>
+
+</body>
+</html>
+
