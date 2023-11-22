@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auto Open and Refresh</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
 </head>
 <body>
 
+<!-- Your personal domain's search bar in an iframe -->
+<iframe id="searchFrame" src="https://www.bing.com" width="600" height="400" style="border: 1px solid #ccc;"></iframe>
+
+<!-- Virtual Keyboard -->
+<div style="margin-top: 20px;">
+    <button onclick="typeWord('Hello')">Hello</button>
+    <button onclick="typeWord('World')">World</button>
+    <!-- Add more buttons for other words or letters -->
+</div>
+
 <script>
-  // Counter to keep track of refreshes
-  var refreshCount = 0;
-
-  // Function to open a link and refresh the page
-  function openLinkAndRefresh() {
-    // Open a link
-    window.open(
-    "https://abhishekkumar25122512.github.io/bing-rewards25122005abhi/"
-    
-    );
-    
-    // Increment the refresh count
-    refreshCount++;
-
-    // Refresh the page 10 times every 5 seconds
-    if (refreshCount < 100) {
-      setTimeout(function() {
-        location.reload();
-      }, 1000);
+    function typeWord(word) {
+        var searchFrame = document.getElementById('searchFrame');
+        if (searchFrame) {
+            var searchInput = searchFrame.contentDocument.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.value = word;
+            }
+        }
     }
-  }
-
-  // Call the function on page load
-  window.onload = openLinkAndRefresh;
 </script>
 
 </body>
 </html>
-
