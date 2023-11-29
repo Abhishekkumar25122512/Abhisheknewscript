@@ -3,31 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Keyboard</title>
+    <meta http-equiv="refresh" content="3.5">
+    <title>Random Bing Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #searchFrame {
+            width: 80%;
+            height: 500px;
+            border: 1px solid #ccc;
+        }
+
+        #searchButton {
+            padding: 20px 30px; /* Adjust the padding to change the button size */
+            font-size: 16px;   /* Adjust the font size if needed */
+        }
+    </style>
 </head>
 <body>
 
-<!-- Your personal domain's search bar in an iframe -->
-<iframe id="searchFrame" src="https://www.bing.com" width="600" height="400" style="border: 1px solid #ccc;"></iframe>
+    <h1>Random Bing Search</h1>
 
-<!-- Virtual Keyboard -->
-<div style="margin-top: 20px;">
-    <button onclick="typeWord('Hello')">Hello</button>
-    <button onclick="typeWord('World')">World</button>
-    <!-- Add more buttons for other words or letters -->
-</div>
+    <button id="searchButton" onclick="searchRandomWord()">Search Random Word</button>
 
-<script>
-    function typeWord(word) {
-        var searchFrame = document.getElementById('searchFrame');
-        if (searchFrame) {
-            var searchInput = searchFrame.contentDocument.getElementById('searchInput');
-            if (searchInput) {
-                searchInput.value = word;
-            }
+    <iframe id="searchFrame" src="" frameborder="0"></iframe>
+
+    <script>
+        function searchRandomWord() {
+            var randomWord = getRandomWord();
+            var bingSearchUrl = "https://www.bing.com/search?q=" + encodeURIComponent(randomWord) +encodeURIComponent(randomWord +2)+ '&PC=U316&FORM=CHROMN';
+            document.getElementById("searchFrame").src = bingSearchUrl;
         }
-    }
-</script>
+
+        function getRandomWord() {
+            var words = ["apple", "banana", "orange", "grape", "kiwi", "melon", "pear", "peach"
+          ,"this", "with", "i", "you", "it", "not", "or", "be", "are",
+    "from", "at", "as", "your", "all", "have", "new", "more", "an", "was",
+    "we", "will", "home", "can", "us", "about", "if", "page", "my", "has",
+    "search", "free", "but", "our", "one", "other", "do", "no",
+    "information", "time", "they", "site", "he", "up", "may", "what",
+    "which", "their", "news", "out", "use", "any", "there", "see", "only",
+    "so", "his", "when", "contact", "here", "business", "who", "web",
+    "also", "now", "help", "get", "pm", "view", "online", "c", "e", "first",
+    "am", "been", "would", "how", "were", "me", "s", "services", "some",
+    "these", "click", "its", "like", "service", "x", "than", "find",
+    "price", "date", "back", "top", "people", "had", "list", "name", "just",
+    "over", "state", "year", "day", "into", "email", "two", "health", "n",
+    "world", "re", "next", "used", "go", "b", "work", "last", "most",
+    "products", "music", "buy", "data", "make", "them", "should", "product",
+    "system", "post", "her", "city", "t", "add", "policy", "number", "such",
+    "please", "available", "copyright", "support", "message", "after",
+    "best", "software", "then", "jan", "good", "video", "well", "d",
+    "where", "info", "rights", "public", "books", "high", "school",
+    "through", "m", "each", "links", "she", "review", "years", "order",
+    "very", "privacy", "book", "items", "company", "r", "read", "group",
+    "sex", "need", "many", "user", "said", "de", "does", "set", "under",
+    "general", "research", "university", "january", "mail", "full", "map",
+    "reviews", "program", "life", "know", "games", "way", "days",
+    "management", "p", "part", "could", "great", "united", "hotel", "real",
+    "f", "item", "international", "center", "ebay", "must", "store",
+    "travel", "comments", "made", "development", "report", "off", "member",
+    "details", "line", "terms", "before", "hotels", "did", "send", "right",
+    "type", "because", "local", "those", "using", "results", "office",
+    "education", "national", "car", "design", "take", "posted", "internet",
+    "address", "community", "within", "states", "area", "want", "phone",
+    "dvd", "shipping", "reserved", "subject", "between", "forum", "family",
+    "l", "long", "based", "w", "code", "show", "o", "even", "black",
+    "check", "special", "prices", "website", "index", "being", "women",
+    "much", "sign", "file", "link", "open", "today", "technology", "south",
+    "case", "project", "same", "pages", "uk", "version", "section", "own",
+    "found", "sports", "house", "related", "security", "both", "g",
+    "county", "american", "photo", "game", "members", "power", "while",
+    "care", "network", "down", "computer", "systems", "three", "total",
+    "place", "end", "following", "download", "h", "him", "without", "per",
+    "access", "think", "north", "resources", "current", "posts", "big"
+            
+
+            ];
+            var randomIndex = Math.floor(Math.random() * words.length);
+            return words[randomIndex];
+        }
+  
+  
+  searchRandomWord() ;
+  
+    </script>
 
 </body>
 </html>
